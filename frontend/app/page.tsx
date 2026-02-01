@@ -14,7 +14,7 @@ type Transaction = {
 
 export default function Home() {
   const [transactions, setTransactions] = useState<Transaction[]>([])
-  const [description, setDescription] = useState<String>("");
+  const [description, setDescription] = useState<string>("");
   const [montant, setMontant] = useState<Number | "">("");
   const [chargemnt, setChargement] = useState(false);
 
