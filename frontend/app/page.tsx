@@ -75,7 +75,7 @@ export default function Home() {
   const depense = montants.filter((montant) => montant < 0).reduce((acc, item) => acc + item, 0) || 0
   const moyenne = gain > 0 ? Math.min((Math.abs(depense) / gain) * 100, 100) : 0
 
-  const formatDate = (dateString: String) => {
+  const formatDate = (dateString: string) => {
     const d = new Date(dateString);
     return d.toLocaleDateString("fr-FR", {
       year: "numeric",
