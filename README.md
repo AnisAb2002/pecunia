@@ -57,7 +57,7 @@ python manage.py migrate
 
 python manage.py runserver
 
-## Frontend
+### Frontend
 
 Il faut se mettre dans le dossier backend et exécuter ces commandes:
 
