@@ -7,6 +7,10 @@ de suivre et analyser les dépenses et les revenus à travers une interface mode
 ## Nom du projet
 Pecunia est un mot latin qui signifie argent, symbolisant la gestion financière personnelle.
 
+## Déployement
+Partie frontend déployée sur Vercel : https://pecunia-uj9j.vercel.app/
+
+Partie backend déployé sur Render : https://pecunia-1-vtiv.onrender.com1
 
 ## Fonctionnalités
 - Ajout de transactions (revenus / dépenses)
