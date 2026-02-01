@@ -42,7 +42,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://pecunia-uj9j.vercel.app/",
 ]
 
 ROOT_URLCONF = 'backend.urls'
