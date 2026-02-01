@@ -15,7 +15,7 @@ type Transaction = {
 export default function Home() {
   const [transactions, setTransactions] = useState<Transaction[]>([])
   const [description, setDescription] = useState<string>("");
-  const [montant, setMontant] = useState<number | "">("");
+  const [montant, setMontant] = useState<string>("");
   const [chargemnt, setChargement] = useState(false);
 
   const getTranscatoins = async()=>{
@@ -28,7 +28,7 @@ export default function Home() {
   }
 
 
-  const supprimerTranscation = async(id : String)=>{
+  const supprimerTranscation = async(id : string)=>{
     try{
       await api.delete(`transactions/${id}/`)
       getTranscatoins()
@@ -214,7 +214,7 @@ export default function Home() {
                       <input type="number" 
                       name="montant" 
                       value={montant} 
-                      onChange={(e)=>setMontant(e.target.value === "" ? "" : Number(e.target.value))}
+                      onChange={(e)=>setMontant(e.target.value)}
                       placeholder="Entrez le montant..."
                       className="input w-full"/>
                     </div>
